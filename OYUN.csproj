@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6450C8CE-0043-4770-9FBD-3E61D1625A70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OYUN</RootNamespace>
+    <AssemblyName>OYUN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="kitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitap.Designer.cs">
+      <DependentUpon>kitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\frmSudoku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\frmSudoku.designer.cs">
+      <DependentUpon>frmSudoku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş\Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş\Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş\OyunGirişEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş\OyunGirişEkranı.Designer.cs">
+      <DependentUpon>OyunGirişEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\Birislemoyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\Birislemoyun.Designer.cs">
+      <DependentUpon>Birislemoyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\DusuktenYuksegeoyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\DusuktenYuksegeoyunu.Designer.cs">
+      <DependentUpon>DusuktenYuksegeoyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\Hafızaoyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\Hafızaoyunu.Designer.cs">
+      <DependentUpon>Hafızaoyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\Hatırlamaoyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\Hatırlamaoyun.Designer.cs">
+      <DependentUpon>Hatırlamaoyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\Karteslestirmeoyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\Karteslestirmeoyun.Designer.cs">
+      <DependentUpon>Karteslestirmeoyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\TicTakTooyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\TicTakTooyunu.Designer.cs">
+      <DependentUpon>TicTakTooyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\Birişlemoyunutanıtım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Birişlemoyunutanıtım.Designer.cs">
+      <DependentUpon>Birişlemoyunutanıtım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\DusuktenYuksegeoyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\DusuktenYuksegeoyunu.Designer.cs">
+      <DependentUpon>DusuktenYuksegeoyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hafızaoyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hafızaoyunu.Designer.cs">
+      <DependentUpon>Hafızaoyunu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hatırlamatanıtım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hatırlamatanıtım.Designer.cs">
+      <DependentUpon>Hatırlamatanıtım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oyunlar\Hesaplamaoyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oyunlar\Hesaplamaoyun.Designer.cs">
+      <DependentUpon>Hesaplamaoyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hesaplamatanıtım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Hesaplamatanıtım.Designer.cs">
+      <DependentUpon>Hesaplamatanıtım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tanıtımlar\Sudoku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Sudoku.Designer.cs">
+      <DependentUpon>Sudoku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\Testtanıtım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\Testtanıtım.Designer.cs">
+      <DependentUpon>Testtanıtım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanıtımlar\TicTakToooyunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanıtımlar\TicTakToooyunu.Designer.cs">
+      <DependentUpon>TicTakToooyunu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="kitap.resx">
+      <DependentUpon>kitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\frmSudoku.resx">
+      <DependentUpon>frmSudoku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş\Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş\OyunGirişEkranı.resx">
+      <DependentUpon>OyunGirişEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\Birislemoyun.resx">
+      <DependentUpon>Birislemoyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\DusuktenYuksegeoyunu.resx">
+      <DependentUpon>DusuktenYuksegeoyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\Hafızaoyunu.resx">
+      <DependentUpon>Hafızaoyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\Hatırlamaoyun.resx">
+      <DependentUpon>Hatırlamaoyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\Karteslestirmeoyun.resx">
+      <DependentUpon>Karteslestirmeoyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\TicTakTooyunu.resx">
+      <DependentUpon>TicTakTooyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Birişlemoyunutanıtım.resx">
+      <DependentUpon>Birişlemoyunutanıtım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\DusuktenYuksegeoyunu.resx">
+      <DependentUpon>DusuktenYuksegeoyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Hafızaoyunu.resx">
+      <DependentUpon>Hafızaoyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Hatırlamatanıtım.resx">
+      <DependentUpon>Hatırlamatanıtım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oyunlar\Hesaplamaoyun.resx">
+      <DependentUpon>Hesaplamaoyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Hesaplamatanıtım.resx">
+      <DependentUpon>Hesaplamatanıtım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Sudoku.resx">
+      <DependentUpon>Sudoku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\Testtanıtım.resx">
+      <DependentUpon>Testtanıtım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanıtımlar\TicTakToooyunu.resx">
+      <DependentUpon>TicTakToooyunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resimler\beyin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-twitter-box-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-facebook-box-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzle-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Github-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
